@@ -157,7 +157,7 @@ export type CallWithChatExampleProps = {
   // Props to customize the CallWithChatComposite experience
   fluentTheme?: PartialTheme | Theme;
   compositeOptions?: CallWithChatCompositeOptions;
-  callInvitationURL?: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTI0MjRlMTItOWMwOC00NmFhLTkzMTEtM2RiZjkyOWFhZjc5%40thread.v2/0?context=%7b%22Tid%22%3a%22de08c407-19b9-427d-9fe8-edf254300ca7%22%2c%22Oid%22%3a%22b9b41804-e61a-40fb-b925-26f70058b086%22%7d';
+  callInvitationURL?: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmNmMTRmN2ItMTMwZi00NWI0LThlNmYtZTU0MjE0YjUxMWJm%40thread.v2/0?context=%7b%22Tid%22%3a%22de08c407-19b9-427d-9fe8-edf254300ca7%22%2c%22Oid%22%3a%22b9b41804-e61a-40fb-b925-26f70058b086%22%7d';
   formFactor?: 'desktop' | 'mobile';
 };
 
