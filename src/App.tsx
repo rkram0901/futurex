@@ -19,12 +19,12 @@ import React, { CSSProperties, useEffect, useMemo, useRef, useState } from 'reac
 import { v4 as uuidv4 } from 'uuid';
 
 const ENDPOINT_URL = 'https://cvscommunicationservice.communication.azure.com/';
-const USER_ID = '8:acs:f56a770c-581e-4143-82a6-3d2734aa61d4_00000017-41e6-6136-0ced-1bbd45604aa3';
-const TOKEN = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmY1NmE3NzBjLTU4MWUtNDE0My04MmE2LTNkMjczNGFhNjFkNF8wMDAwMDAxNy00MWU2LTYxMzYtMGNlZC0xYmJkNDU2MDRhYTMiLCJzY3AiOjE3OTIsImNzaSI6IjE2Nzc3NTU0NjUiLCJleHAiOjE2Nzc4NDE4NjUsInJnbiI6ImluIiwiYWNzU2NvcGUiOiJjaGF0LHZvaXAiLCJyZXNvdXJjZUlkIjoiZjU2YTc3MGMtNTgxZS00MTQzLTgyYTYtM2QyNzM0YWE2MWQ0IiwicmVzb3VyY2VMb2NhdGlvbiI6ImluZGlhIiwiaWF0IjoxNjc3NzU1NDY1fQ.mHN0cab9OFyl56bjx0WgQf36FT8y8mPu4C4MQ_y0ZjKHMCozUltDn53fwfiWXvpTbe9jQSBQJComEkcX6L_FOOCQ_VDta9reFNBsLeEpGaBWCCgbA6hVWKrAkkkeCzNmW_vmdClcbVXTX_oMil8ci1garRGgs6ual51f9dFpSKS8pfORo7wgGQvnhzIgEh4LYyz5g9MtkGA6p3G97Ja3ZOQk7XqUcsbF0QvxSCUjc9FzXyHtq0wyaKW8UG30dmF7gjeuJqxbT1-AvDyMQ8NJjuxK3ScscxG1Bs3lILfJwW-IcuvoR6wun2UggrU1V4yp4LNgQme4CGtY7m1IgQp4iQ';
+const USER_ID = '8:acs:f56a770c-581e-4143-82a6-3d2734aa61d4_00000017-4863-96ce-48e5-1bbd456070f9';
+const TOKEN = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmY1NmE3NzBjLTU4MWUtNDE0My04MmE2LTNkMjczNGFhNjFkNF8wMDAwMDAxNy00ODYzLTk2Y2UtNDhlNS0xYmJkNDU2MDcwZjkiLCJzY3AiOjE3OTIsImNzaSI6IjE2Nzc4NjQzMzQiLCJleHAiOjE2Nzc5NTA3MzQsInJnbiI6ImluIiwiYWNzU2NvcGUiOiJjaGF0LHZvaXAiLCJyZXNvdXJjZUlkIjoiZjU2YTc3MGMtNTgxZS00MTQzLTgyYTYtM2QyNzM0YWE2MWQ0IiwicmVzb3VyY2VMb2NhdGlvbiI6ImluZGlhIiwiaWF0IjoxNjc3ODY0MzM0fQ.BSstSKMB9yBGYs40eIQq7VC5HzLy_ACWnT0HGZEr2LOgF9pPc3B3Zvc-jkGvunPcGVIeV1EVyuWf-Jn9Giek7l1v9G2iI9N1uEoX95gUwhVlBZSg5myCVVW7oAXkK4WDap9Ozu56qnXgzYIA2K8URDcfVZVUK3AZOgkBtaJ-tKKZDRM_ZHOAA0mgGbiVjbp059x_GLSHH6A9buvAgVVyVyIsWlemT2k-b1w5XbMcp5_Q-NPG0vBTIvL7l0TL0vGrP6sYxbSztmeNJAjkfRh75AK2t_6e-yBudy4QtZrcBDKwHGZiaEpBLE441KjT6JhFm6Ylif3flXxOEG8Ee4B46g';
 const DISPLAY_NAME = 'Karthikeyan';
 /**
  * Entry point of your application.
- */
+
 function App(): JSX.Element {
   // Arguments that would usually be provided by your backend service or
   // (indirectly) by the user.
@@ -133,7 +133,7 @@ function useAzureCommunicationServiceArgs(): {
     threadId
   };
 }
-
+ */
 export type CallWithChatExampleProps = {
   // Props needed for the construction of the CallWithChatAdapter  
   userId:  CommunicationUserIdentifier;
@@ -152,25 +152,25 @@ export type CallWithChatExampleProps = {
    * TeamsMeetingLinkLocator: this is a special locator comprised of a Teams meeting link
    * {meetingLink: ...}
    */
-  locator: TeamsMeetingLinkLocator | CallAndChatLocator;
+  locator: TeamsMeetingLinkLocator;
 
   // Props to customize the CallWithChatComposite experience
-  fluentTheme?: PartialTheme | Theme;
+  fluentTheme?: PartialTheme;
   compositeOptions?: CallWithChatCompositeOptions;
   callInvitationURL?: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmNmMTRmN2ItMTMwZi00NWI0LThlNmYtZTU0MjE0YjUxMWJm%40thread.v2/0?context=%7b%22Tid%22%3a%22de08c407-19b9-427d-9fe8-edf254300ca7%22%2c%22Oid%22%3a%22b9b41804-e61a-40fb-b925-26f70058b086%22%7d';
-  formFactor?: 'desktop' | 'mobile';
+  formFactor?: 'desktop';
 };
 
-export const CallWithChatExperience = (props: CallWithChatExampleProps): JSX.Element => {
+function App(props: CallWithChatExampleProps): JSX.Element {
   // Construct a credential for the user with the token retrieved from your server. This credential
   // must be memoized to ensure useAzureCommunicationCallWithChatAdapter is not retriggered on every render pass.
-  const credential = useMemo(() => new AzureCommunicationTokenCredential(props.token), [props.token]);
+  const credential = useMemo(() => new AzureCommunicationTokenCredential(TOKEN), [TOKEN]);
 
   // Create the adapter using a custom react hook provided in the @azure/communication-react package.
   // See https://aka.ms/acsstorybook?path=/docs/composite-adapters--page for more information on adapter construction and alternative constructors.
   const adapter = useAzureCommunicationCallWithChatAdapter({
     //userId: fromFlatCommunicationIdentifier(USER_ID) as CommunicationUserIdentifier,
-    userId: props.userId,
+    userId: fromFlatCommunicationIdentifier(USER_ID) as CommunicationUserIdentifier,
     displayName: props.displayName,
     credential,
     locator: props.locator,
